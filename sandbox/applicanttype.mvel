@@ -7,18 +7,18 @@ def getApplicantType(map,a) {
                 String dob = null;
                 String genderType = null;
                 boolean isBioExPresent = false;
-                String NonResident = "102";
-                String Resident = "101";
-                String MALE = "101";
-                String FEMALE = "102";
-                String Others = "103";
+                String NonResident = "NFR";
+                String Resident = "FR";
+                String MALE = "MLE";
+                String FEMALE = "FLE";
+                String Others = "OTH";
                 String CHILD = "CHL";
                 String ADULT = "ADL";
                 String ATTR_INDIVIDUAL_TYPE = "individualTypeCode";
                 String ATTR_DATE_OF_BIRTH = "dateofbirth";
                 String ATTR_GENDER_TYPE = "genderCode";
                 String ATTR_BIOMETRIC_EXCEPTION_TYPE = "biometricAvailable";
-                String UTC_DATETIME_PATTERN = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
+                String UTC_DATETIME_PATTERN = "dd/MM/uuuu";
                 itc= (String) map[ATTR_INDIVIDUAL_TYPE];
                 dob= (String) map[ATTR_DATE_OF_BIRTH];
                 if(dob == empty || dob == null ){
